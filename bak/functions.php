@@ -541,8 +541,3 @@ function et_theme_maybe_load_core() {
 	et_core_setup( get_template_directory_uri() );
 }
 add_action( 'after_setup_theme', 'et_theme_maybe_load_core' );
-
-add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
-function enqueue_load_fa() {
-wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.8.2/css/all.css' );
-}

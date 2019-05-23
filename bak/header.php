@@ -49,20 +49,8 @@
 <body <?php body_class(); ?>>
     <div id="container">
         <div id="wrapper">
-
             <header id="main-header" class="clearfix">
                 <div id="top-area">
-                    <ul class="list-inline social-media sm">
-                        <li><a href="https://www.facebook.com/VillaCustomHomes"
-                                class="facebook-button social-media-button sm square lighten external"
-                                target="_blank"><i class="fab fa-facebook fa-fw "><span>Facebook</span></i></a></li>
-                        <li><a href="https://twitter.com/villacustomhome"
-                                class="twitter-button social-media-button sm square lighten external" target="_blank"><i
-                                    class="fab fa-twitter fa-fw "><span>Twitter</span></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/villa-custom-homes"
-                                class="linkedin-button social-media-button sm square lighten external"
-                                target="_blank"><i class="fab fa-linkedin fa-fw "><span>Linkedin</span></i></a></li>
-                    </ul>
                     <?php do_action('et_header_top'); ?>
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                         <?php $logo = (get_option('trim_logo') <> '') ? esc_attr(get_option('trim_logo')) : get_template_directory_uri() . '/images/logo.png'; ?>
@@ -78,7 +66,6 @@
                                 id="searchsubmit" />
                         </form>
                     </div> <!-- end #search-form -->
-
                 </div> <!-- end #top-area -->
 
                 <div id="menu" class="clearfix">
